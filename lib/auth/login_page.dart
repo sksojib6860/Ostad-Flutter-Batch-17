@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../home/home_page.dart';
 import 'sign_up_screen.dart';
 
 class LogInPage extends StatefulWidget {
@@ -36,7 +37,12 @@ class _LogInPageState extends State<LogInPage> {
               ),
               const SizedBox(height: 25),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MyHomePage()),
+                  );
+                },
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
