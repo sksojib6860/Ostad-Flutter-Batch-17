@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../home/home_page.dart';
+import '../bottom_nav_bar.dart';
 import 'sign_up_screen.dart';
 
 class LogInPage extends StatefulWidget {
@@ -40,7 +40,9 @@ class _LogInPageState extends State<LogInPage> {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => const MyHomePage()),
+                    MaterialPageRoute(
+                      builder: (context) => const BottomNavBar(),
+                    ),
                   );
                 },
                 child: const Row(
